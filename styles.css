@@ -2,7 +2,7 @@
 
 
 body {
-    font-family: 'Alumni Sans SC', sans-serif !important;
+    font-family: 'Alumni Sans SC', sans-serif;
     
 }
 
@@ -30,6 +30,8 @@ html {
     margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 
@@ -83,6 +85,7 @@ header {
 }
 
 .brand-text {
+    
     max-width: 180px;
     white-space: normal;
     line-height: 1.1;
@@ -238,11 +241,7 @@ footer {
 
 /* MAIN CONTENT CONTACTO */
 
-.container{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 .contact-main p {
     font-size: 25px;
@@ -331,7 +330,7 @@ footer {
 }
 
 
-@media (max-width: 300px) {
+@media (max-width: 500px) {
   body {
     font-size: 1.1em;
   }
