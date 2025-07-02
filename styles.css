@@ -46,7 +46,7 @@ header {
     min-height: 80px;
     align-items: center;
     grid-area: header;
-    width: 100%;
+    width: 1fr;
     padding: 0;
     margin: 0;
 }
