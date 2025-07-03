@@ -55,7 +55,7 @@ header{
 }
 
 
- .navbar a{
+ .nav-link{
               font-size: 25px;
               color: variables.$secondary-color;
               background-color: variables.$primary-color;
@@ -71,7 +71,10 @@ header{
 
 
 .brand-text {
-    font-size: 1.5rem;
+    white-space: normal;
+    word-break: break-word;
+    font-size: 1rem;
+    max-width: 150px;
     color: variables.$primary-color;
     margin-left: 10px;
 }
@@ -123,6 +126,8 @@ button {
     color: #4b2600;
     border-radius: 6px;
 }
+
+
 
 
 
