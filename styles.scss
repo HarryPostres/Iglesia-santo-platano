@@ -104,6 +104,15 @@ h3{
     color: variables.$fifth-color;
 }
 
+p{
+    color: variables.$fifth-color;
+    font-size: 20px;
+}
+
+
+
+
+
 
 
 form {
@@ -141,43 +150,42 @@ button {
     border-radius: 6px;
 }
 
-.articulo1{
-
-
-
-       .img-fluid{
-
-
-
-
-            .text-article-1{
-                
-            }
-
-
-       }
-
-
+.articulo1 p{
+    background-color: variables.$secondary-color;
+    color : variables.$primary-color;
+    font-size: 25px;
 
 }
 
 
 
-.articulo2{
+.articulo2 p{
 
+background-color: variables.$secondary-color;
+color : variables.$primary-color;
+font-size: 25px;
 
-
-
-    
-        .text-article-2{
-
-
-
-
-        } 
 }
 
+footer p{
+    border-radius: 7px;
+    font-size: 15px;
+    background-color: variables.$primary-color; 
+    color: variables.$fifth-color;
+    text-align: center;
+}
 
+.actividades{
+    font-size: 25px;
+    background-color: variables.$secondary-color;
+    color: variables.$primary-color;
+}
+
+.creencias-lista {
+    font-size: 20px;
+    background-color: variables.$secondary-color;
+    color: variables.$primary-color;
+}
 
 
 

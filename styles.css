@@ -83,6 +83,11 @@ h3 {
   color: #552d05;
 }
 
+p {
+  color: #552d05;
+  font-size: 20px;
+}
+
 form {
   color: #ffe135;
   background-color: #704214;
@@ -113,6 +118,38 @@ button {
   background-color: #edcc12;
   color: #4b2600;
   border-radius: 6px;
+}
+
+.articulo1 p {
+  background-color: #704214;
+  color: #ffe135;
+  font-size: 25px;
+}
+
+.articulo2 p {
+  background-color: #704214;
+  color: #ffe135;
+  font-size: 25px;
+}
+
+footer p {
+  border-radius: 7px;
+  font-size: 15px;
+  background-color: #ffe135;
+  color: #552d05;
+  text-align: center;
+}
+
+.actividades {
+  font-size: 25px;
+  background-color: #704214;
+  color: #ffe135;
+}
+
+.creencias-lista {
+  font-size: 20px;
+  background-color: #704214;
+  color: #ffe135;
 }
 
 /*# sourceMappingURL=styles.css.map */
