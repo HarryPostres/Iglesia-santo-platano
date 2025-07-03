@@ -39,6 +39,7 @@ header .navbar-custom {
   padding-bottom: 20px;
   max-width: 100%;
   background-color: #704214;
+  border-radius: 5px;
 }
 
 .nav-link {
@@ -97,6 +98,7 @@ form {
   justify-content: center;
   gap: 1rem;
   font-size: 25px;
+  border-radius: 5px;
 }
 
 form div {
@@ -110,13 +112,13 @@ form select {
   padding: 12px 16px;
   font-size: medium;
   border-radius: 10px;
-  background-color: #edcc12;
-  color: #643200;
+  background-color: #ffe135;
+  color: #704214;
 }
 
 button {
-  background-color: #edcc12;
-  color: #4b2600;
+  background-color: #ffe135;
+  color: #704214;
   border-radius: 6px;
 }
 
@@ -124,9 +126,11 @@ button {
   background-color: #704214;
   color: #ffe135;
   font-size: 25px;
+  border-radius: 5px;
 }
 
 .articulo2 p {
+  border-radius: 5px;
   background-color: #704214;
   color: #ffe135;
   font-size: 25px;
@@ -144,12 +148,21 @@ footer p {
   font-size: 25px;
   background-color: #704214;
   color: #ffe135;
+  border-radius: 5px;
 }
 
 .creencias-lista {
   font-size: 20px;
   background-color: #704214;
   color: #ffe135;
+  border-radius: 5px;
+}
+
+.texto-historia p {
+  background-color: #704214;
+  font-size: 20px;
+  color: #ffe135;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */
