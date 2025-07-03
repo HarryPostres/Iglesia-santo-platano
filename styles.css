@@ -71,6 +71,18 @@ main {
   border-radius: 10px;
 }
 
+h1 {
+  color: #552d05;
+}
+
+h2 {
+  color: #552d05;
+}
+
+h3 {
+  color: #552d05;
+}
+
 form {
   color: #ffe135;
   background-color: #704214;
