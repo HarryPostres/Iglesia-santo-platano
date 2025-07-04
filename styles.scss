@@ -44,9 +44,12 @@ header{
     margin: 0;
 
       .navbar-custom{
+           display: flex;
            height: 80px;
-           padding-top: 20px;
-           padding-bottom: 20px;
+           align-items: center;
+           
+           padding-top: 0%;
+           padding-bottom: 0%;
            max-width: 100%;
            background-color: variables.$secondary-color;
            border-radius: 5px;
@@ -54,6 +57,9 @@ header{
           
       }
 }
+
+
+
 
 
  .nav-link{
@@ -80,9 +86,13 @@ header{
     margin-left: 10px;
 }
 
+.navbar-toggler{
+    border: 3px solid variables.$primary-color;
+}
 
-
-
+.navbar-toggler-icon {
+ filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
 
 main {
     margin-top: 0;
@@ -95,6 +105,7 @@ main {
 
 h1{
     color: variables.$fifth-color;
+
 }
 
 h2{
@@ -126,12 +137,14 @@ form {
     gap: 1rem;
     font-size: 25px;
     border-radius: 5px;
+    padding: 1rem;
 }
 
 form div {
     display: flex;
     flex-direction: column;
     width: 400px;
+    gap:0.5rem;
 }
 
 form input,
@@ -144,12 +157,17 @@ form select {
 }
 
 
-
-
 button {
     background-color: variables.$primary-color;
     color: variables.$secondary-color;
     border-radius: 6px;
+    align-self: center;
+    width: 100px;
+}
+
+
+.articulo1 img{
+    padding-bottom: 10px;
 }
 
 .articulo1 p{
@@ -157,8 +175,12 @@ button {
     color : variables.$primary-color;
     font-size: 25px;
     border-radius: 5px;
-
 }
+
+.articulo2 img{
+    padding-bottom: 10px;
+}
+
 
 .articulo2 p{
 border-radius: 5px;
@@ -174,6 +196,10 @@ footer p{
     background-color: variables.$primary-color; 
     color: variables.$fifth-color;
     text-align: center;
+}
+
+.img-actividades-1{
+    padding-bottom: 10px;
 }
 
 .actividades{
@@ -195,10 +221,21 @@ footer p{
     background-color: variables.$secondary-color;
     font-size: 20px;
     color: variables.$primary-color;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
+.galeria-creencias img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    display: block;
+    margin-bottom: 10px;
+}
             
+.galeria-creencias img:last-child {
+    margin-bottom: 0;
+}
 
 
 
