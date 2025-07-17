@@ -322,10 +322,14 @@ li{
 
 
 
-.banana-izquierda,
-.banana-derecha {
+.banana-izquierda {
     display: inline-block;
-    animation: girar 4s linear infinite;
+    animation: girar-izq 4s linear infinite;
+}
+
+.banana-derecha{
+    display: inline-block;
+    animation: girar-der 4s linear infinite;
 }
 
 .banana-izquierda{
@@ -338,7 +342,7 @@ li{
 
 
 
-@keyframes girar {
+@keyframes girar-izq {
    from {
     transform: rotate(0deg);
    }
@@ -346,7 +350,25 @@ to {
     transform: rotate(360deg);
 }
 }
+
+@keyframes girar-der {
+   from {
+    transform: rotate(0deg);
+   }
+  to {
+    transform: rotate(-360deg);
+  } 
+    
 }
+
+
+
+
+
+
+}
+
+
 
 
 

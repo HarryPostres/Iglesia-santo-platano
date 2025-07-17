@@ -269,10 +269,13 @@ footer p {
     justify-content: center;
     gap: 20px;
   }
-  .banana-izquierda,
+  .banana-izquierda {
+    display: inline-block;
+    animation: girar-izq 4s linear infinite;
+  }
   .banana-derecha {
     display: inline-block;
-    animation: girar 4s linear infinite;
+    animation: girar-der 4s linear infinite;
   }
   .banana-izquierda {
     margin-right: 15px;
@@ -280,12 +283,20 @@ footer p {
   .banana-derecha {
     margin-left: 15px;
   }
-  @keyframes girar {
+  @keyframes girar-izq {
     from {
       transform: rotate(0deg);
     }
     to {
       transform: rotate(360deg);
+    }
+  }
+  @keyframes girar-der {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
     }
   }
 }
