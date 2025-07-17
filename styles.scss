@@ -25,10 +25,10 @@ body, html {
         "articulos"
         "footer";
     grid-template-rows: auto auto auto auto;
-    gap: 10px;
+    gap: variables.$gap-s;
     margin: 0 auto;
-    padding: 20px;
-    border-radius: 10px;
+    padding: variables.$padding-m;
+    border-radius: variables.$radius-m;
     max-width: 1fr;
     box-sizing: border-box;
 }
@@ -52,7 +52,7 @@ header{
            padding-bottom: 0%;
            max-width: 100%;
            background-color: variables.$secondary-color;
-           border-radius: 5px;
+           border-radius: variables.$radius-s;
 
           
       }
@@ -63,12 +63,12 @@ header{
 
 
  .nav-link{
-              font-size: 25px;
+              font-size: variables.$font-m;
               color: variables.$secondary-color;
               background-color: variables.$primary-color;
               padding: 5px 15px;
               margin-right: 10px;
-              border-radius: 4px;
+              border-radius: variables.$radius-s;
 
       &:hover{
         color: variables.$third-color;
@@ -98,9 +98,9 @@ main {
     margin-top: 0;
     grid-area: main;
     background-color: variables.$primary-color;
-    padding: 20px;
+    padding: variables.$padding-m;
     text-align: center;
-    border-radius: 10px;
+    border-radius: variables.$radius-m;
 }
 
 h1{
@@ -118,7 +118,7 @@ h3{
 
 p{
     color: variables.$fifth-color;
-    font-size: 20px;
+    font-size: variables.$font-m;
 }
 
 
@@ -135,8 +135,8 @@ form {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    font-size: 25px;
-    border-radius: 5px;
+    font-size: variables.$font-m;
+    border-radius: variables.$radius-s;
     padding: 1rem;
 }
 
@@ -150,8 +150,8 @@ form div {
 form input,
 form select {
     padding: 12px 16px;
-    font-size: medium;
-    border-radius: 10px;
+    font-size: variables.$font-m;
+    border-radius: variables.$radius-m;
     background-color: variables.$primary-color;
     color: variables.$secondary-color;
 }
@@ -160,75 +160,73 @@ form select {
 button {
     background-color: variables.$primary-color;
     color: variables.$secondary-color;
-    border-radius: 6px;
+    border-radius: variables.$radius-s;
     align-self: center;
     width: 100px;
 }
 
 
 .articulo1 img{
-    padding-bottom: 10px;
+    padding-bottom: variables.$padding-s;
 }
 
 .articulo1 p{
     background-color: variables.$secondary-color;
     color : variables.$primary-color;
-    font-size: 25px;
-    border-radius: 5px;
+    font-size: variables.$font-m;
+    border-radius: variables.$radius-s;
 }
 
 .articulo2 img{
-    padding-bottom: 10px;
+    padding-bottom: variables.$padding-s;
 }
 
 
 .articulo2 p{
-border-radius: 5px;
+border-radius: variables.$radius-s;
 background-color: variables.$secondary-color;
 color : variables.$primary-color;
-font-size: 25px;
+font-size: variables.$font-m;
 
 }
 
 footer p{
-    border-radius: 7px;
-    font-size: 15px;
+    border-radius: variables.$radius-s;
+    font-size: variables.$font-s;
     background-color: variables.$primary-color; 
     color: variables.$fifth-color;
     text-align: center;
 }
 
 .img-actividades-1{
-    padding-bottom: 10px;
+    padding-bottom: variables.$padding-s;
 }
 
 .actividades{
-    font-size: 25px;
+    font-size: variables.$font-m;
     background-color: variables.$secondary-color;
     color: variables.$primary-color;
-    border-radius: 5px;
+    border-radius: variables.$radius-s;
 }
 
 .creencias-lista {
-    font-size: 20px;
     background-color: variables.$secondary-color;
     color: variables.$primary-color;
-    border-radius: 5px;
+    border-radius: variables.$radius-s;
 }
 
 
 .texto-historia p{
     background-color: variables.$secondary-color;
-    font-size: 20px;
     color: variables.$primary-color;
-    border-radius: 10px;
+    border-radius: variables.$radius-m;
 }
 
 .galeria-creencias {
   display: grid;
-  grid-template-columns: 1fr; /* 1 columna por defecto */
-  justify-items: center;       /* centrar imágenes horizontalmente */
-  gap: 15px;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  gap: 10px; 
 }
 
 .galeria-creencias img {
@@ -247,18 +245,23 @@ footer p{
 
 .banana-izquierda,
 .banana-derecha {
-  display: none;              /* ocultas por defecto (mobile) */
+  display: none;
   width: 150px;
   height: 150px;
 }
 
 
 
-@media (min-width:768px) {
+@media (min-width: variables.$breakpoint-pc) {
+ .banana-izquierda,
+ .banana-derecha {
+    display: inline-block;
+  }
+}
 .galeria-creencias{
  grid-template-columns: repeat(3,1fr);
  justify-items: center;
- gap: 20px
+ gap: variables.$gap-m;
 }
 
 .galeria-creencias img {
@@ -272,26 +275,29 @@ footer p{
 }
 
 .img-historia-1 img {
-    width: 100%;
-    max-width: 600px;
+    grid-template-columns: repeat(3, 1fr);
+    jistify-items: center;
     height: auto;
-    display: block;
+    margin-left: 15px;
+    margin-right: 15px;
 
 
 }
 
+.texto-historia p{
+   font-size: variables.$font-m;
+}
+
 p{
-    font-size: 25px;
+    font-size: variables.$font-m;
     color: variables.$fifth-color;
 }
 
 li{
-    font-size: 25px;
+    font-size: variables.$font-m;
 }
 
-.texto-historia p{
-   font-size: 25px;
-}
+
 
 .banana-izquierda,
 .banana-derecha{
@@ -302,14 +308,14 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: variables.$gap-m;
 }
 
 .img-actividades-1{
     display: flex;
     align-items: center;
     justify-content: center;    
-    gap: 20px;
+    gap: variables.$gap-m;
 }
 
 
@@ -322,6 +328,16 @@ li{
     animation: girar 4s linear infinite;
 }
 
+.banana-izquierda{
+    margin-right: 15px;
+}
+
+.banana-derecha {
+    margin-left: 15px;
+}
+
+
+
 @keyframes girar {
    from {
     transform: rotate(0deg);
@@ -330,7 +346,7 @@ to {
     transform: rotate(360deg);
 }
 }
-}
+
 
 
 
