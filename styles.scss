@@ -224,29 +224,113 @@ footer p{
     border-radius: 10px;
 }
 
-.galeria-creencias{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-    width: 100%;
+.galeria-creencias {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 columna por defecto */
+  justify-items: center;       /* centrar imágenes horizontalmente */
+  gap: 15px;
 }
 
-.galeria-creencias img{
-    max-width: ;
-    width: ;
-    max-height: 400px;
-    max-width: 400px;
+.galeria-creencias img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+}
+
+
+.img-jesus {
+  width: 50px;
+  height: auto;
+  display: block;
+}
+
+.banana-izquierda,
+.banana-derecha {
+  display: none;              /* ocultas por defecto (mobile) */
+  width: 150px;
+  height: 150px;
+}
+
+
+
+@media (min-width:768px) {
+.galeria-creencias{
+ grid-template-columns: repeat(3,1fr);
+ justify-items: center;
+ gap: 20px
+}
+
+.galeria-creencias img {
+ height: 300px;
+
+}
+
+.img-historia-1{
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.img-historia-1 img {
+    width: 100%;
+    max-width: 600px;
     height: auto;
     display: block;
+
+
+}
+
+p{
+    font-size: 25px;
+    color: variables.$fifth-color;
+}
+
+li{
+    font-size: 25px;
+}
+
+.texto-historia p{
+   font-size: 25px;
+}
+
+.banana-izquierda,
+.banana-derecha{
+   display: inline-block;
+}
+
+.imgs-index {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.img-actividades-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    gap: 20px;
 }
 
 
 
 
 
+.banana-izquierda,
+.banana-derecha {
+    display: inline-block;
+    animation: girar 4s linear infinite;
+}
 
+@keyframes girar {
+   from {
+    transform: rotate(0deg);
+   }
+to {
+    transform: rotate(360deg);
+}
+}
+}
 
 
 
