@@ -224,82 +224,69 @@ footer p {
   .banana-derecha {
     display: inline-block;
   }
-}
-.galeria-creencias {
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  gap: 20px;
-}
-
-.galeria-creencias img {
-  height: 300px;
-}
-
-.img-historia-1 {
-  grid-template-columns: 1fr;
-  justify-items: center;
-}
-
-.img-historia-1 img {
-  grid-template-columns: repeat(3, 1fr);
-  jistify-items: center;
-  height: auto;
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
-.texto-historia p {
-  font-size: 25px;
-}
-
-p {
-  font-size: 25px;
-  color: #552d05;
-}
-
-li {
-  font-size: 25px;
-}
-
-.banana-izquierda,
-.banana-derecha {
-  display: inline-block;
-}
-
-.imgs-index {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-
-.img-actividades-1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-
-.banana-izquierda,
-.banana-derecha {
-  display: inline-block;
-  animation: girar 4s linear infinite;
-}
-
-.banana-izquierda {
-  margin-right: 15px;
-}
-
-.banana-derecha {
-  margin-left: 15px;
-}
-
-@keyframes girar {
-  from {
-    transform: rotate(0deg);
+  .galeria-creencias {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  .galeria-creencias img {
+    height: 300px;
+  }
+  .img-historia-1 {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .img-historia-1 img {
+    grid-template-columns: repeat(3, 1fr);
+    jistify-items: center;
+    height: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .texto-historia p {
+    font-size: 25px;
+  }
+  p {
+    font-size: 25px;
+    color: #552d05;
+  }
+  li {
+    font-size: 25px;
+  }
+  .banana-izquierda,
+  .banana-derecha {
+    display: inline-block;
+  }
+  .imgs-index {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .img-actividades-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .banana-izquierda,
+  .banana-derecha {
+    display: inline-block;
+    animation: girar 4s linear infinite;
+  }
+  .banana-izquierda {
+    margin-right: 15px;
+  }
+  .banana-derecha {
+    margin-left: 15px;
+  }
+  @keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
 }
 
