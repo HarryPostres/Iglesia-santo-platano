@@ -1,6 +1,7 @@
 /* colors */
 /* font-sizes */
 /* espacios */
+/* BODY */
 body {
   font-family: "Alumni Sans SC", sans-serif;
 }
@@ -85,6 +86,7 @@ main {
   border-radius: 10px;
 }
 
+/* TEXTOS */
 h1 {
   color: #552d05;
 }
@@ -102,6 +104,48 @@ p {
   font-size: 25px;
 }
 
+.articulo1 p {
+  background-color: #704214;
+  color: #ffe135;
+  font-size: 25px;
+  border-radius: 5px;
+}
+
+.articulo2 p {
+  border-radius: 5px;
+  background-color: #704214;
+  color: #ffe135;
+  font-size: 25px;
+}
+
+footer p {
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: #ffe135;
+  color: #552d05;
+  text-align: center;
+}
+
+.creencias-lista {
+  background-color: #704214;
+  color: #ffe135;
+  border-radius: 5px;
+}
+
+.texto-historia p {
+  background-color: #704214;
+  color: #ffe135;
+  border-radius: 10px;
+}
+
+.actividades {
+  font-size: 25px;
+  background-color: #704214;
+  color: #ffe135;
+  border-radius: 5px;
+}
+
+/* FORM */
 form {
   color: #ffe135;
   background-color: #704214;
@@ -139,57 +183,21 @@ button {
   width: 100px;
 }
 
-.articulo1 img {
+/* IMAGENES */
+.img-enviado {
   padding-bottom: 10px;
 }
 
-.articulo1 p {
-  background-color: #704214;
-  color: #ffe135;
-  font-size: 25px;
-  border-radius: 5px;
+.articulo1 img {
+  padding-bottom: 10px;
 }
 
 .articulo2 img {
   padding-bottom: 10px;
 }
 
-.articulo2 p {
-  border-radius: 5px;
-  background-color: #704214;
-  color: #ffe135;
-  font-size: 25px;
-}
-
-footer p {
-  border-radius: 5px;
-  font-size: 15px;
-  background-color: #ffe135;
-  color: #552d05;
-  text-align: center;
-}
-
 .img-actividades-1 {
   padding-bottom: 10px;
-}
-
-.actividades {
-  font-size: 25px;
-  background-color: #704214;
-  color: #ffe135;
-  border-radius: 5px;
-}
-
-.creencias-lista {
-  background-color: #704214;
-  color: #ffe135;
-  border-radius: 5px;
-}
-
-.texto-historia p {
-  background-color: #704214;
-  color: #ffe135;
-  border-radius: 10px;
 }
 
 .galeria-creencias {
@@ -219,6 +227,7 @@ footer p {
   height: 150px;
 }
 
+/* PC */
 @media (min-width: 1024px) {
   .banana-izquierda,
   .banana-derecha {
