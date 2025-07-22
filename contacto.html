@@ -74,17 +74,17 @@
                 </p>
 
                 <!-- FORMULARIO -->
-                <form name="contacto" method="post" netlify>
+                <form name="contacto" method="post" netlify action="enviado.html">
 
                     <div>
                         <label for="nombre"> Nombre y Apellidos:</label>
-                        <input type="text" id="nombre" name="Nombre">
+                        <input type="text" id="nombre" name="Nombre" required>
 
                         <label for="telefono">Número de teléfono:</label>
                         <input type="text" id="telefono" name="Telefono">
 
                         <label for="pais">País</label>
-                        <select name="Pais" id="pais" name="Pais">
+                        <select name="Pais" id="pais">
                             <option value="argentina"> Argentina</option>
                             <option value="brasil">Brasil</option>
                             <option value="uruguay">Uruguay</option>
@@ -96,6 +96,7 @@
                         <label for="localidad">Localidad</label>
                         <input type="text" id="localidad" name="Localidad">
                     </div>
+                     
                     <button type="submit">Enviar</button>
                 </form>
         </div>
