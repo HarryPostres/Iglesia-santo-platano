@@ -1,6 +1,8 @@
 
 @use 'variables';
 
+/* BODY */
+
 body {
     font-family: 'Alumni Sans SC', sans-serif;
     
@@ -103,6 +105,8 @@ main {
     border-radius: variables.$radius-m;
 }
 
+/* TEXTOS */
+
 h1{
     color: variables.$fifth-color;
 
@@ -121,12 +125,51 @@ p{
     font-size: variables.$font-m;
 }
 
+.articulo1 p{
+    background-color: variables.$secondary-color;
+    color : variables.$primary-color;
+    font-size: variables.$font-m;
+    border-radius: variables.$radius-s;
+}
+
+.articulo2 p{
+border-radius: variables.$radius-s;
+background-color: variables.$secondary-color;
+color : variables.$primary-color;
+font-size: variables.$font-m;
+
+}
+
+footer p{
+    border-radius: variables.$radius-s;
+    font-size: variables.$font-s;
+    background-color: variables.$primary-color; 
+    color: variables.$fifth-color;
+    text-align: center;
+}
+
+.creencias-lista {
+    background-color: variables.$secondary-color;
+    color: variables.$primary-color;
+    border-radius: variables.$radius-s;
+}
+
+.texto-historia p{
+    background-color: variables.$secondary-color;
+    color: variables.$primary-color;
+    border-radius: variables.$radius-m;
+}
+
+.actividades{
+    font-size: variables.$font-m;
+    background-color: variables.$secondary-color;
+    color: variables.$primary-color;
+    border-radius: variables.$radius-s;
+}
 
 
 
-
-
-
+/* FORM */
 form {
     color: variables.$primary-color;
     background-color: variables.$secondary-color;
@@ -166,60 +209,22 @@ button {
 }
 
 
+/* IMAGENES */
+
+
 .articulo1 img{
     padding-bottom: variables.$padding-s;
 }
 
-.articulo1 p{
-    background-color: variables.$secondary-color;
-    color : variables.$primary-color;
-    font-size: variables.$font-m;
-    border-radius: variables.$radius-s;
-}
+
 
 .articulo2 img{
     padding-bottom: variables.$padding-s;
 }
 
 
-.articulo2 p{
-border-radius: variables.$radius-s;
-background-color: variables.$secondary-color;
-color : variables.$primary-color;
-font-size: variables.$font-m;
-
-}
-
-footer p{
-    border-radius: variables.$radius-s;
-    font-size: variables.$font-s;
-    background-color: variables.$primary-color; 
-    color: variables.$fifth-color;
-    text-align: center;
-}
-
 .img-actividades-1{
     padding-bottom: variables.$padding-s;
-}
-
-.actividades{
-    font-size: variables.$font-m;
-    background-color: variables.$secondary-color;
-    color: variables.$primary-color;
-    border-radius: variables.$radius-s;
-}
-
-.creencias-lista {
-    background-color: variables.$secondary-color;
-    color: variables.$primary-color;
-    border-radius: variables.$radius-s;
-}
-
-
-.texto-historia p{
-    background-color: variables.$secondary-color;
-    color: variables.$primary-color;
-    border-radius: variables.$radius-m;
 }
 
 .galeria-creencias {
@@ -252,6 +257,8 @@ footer p{
 
 
 
+
+/* PC */
 @media (min-width: variables.$breakpoint-pc) {
  .banana-izquierda,
  .banana-derecha {
